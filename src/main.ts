@@ -66,7 +66,7 @@ const deleteTodo =(id:string)=>{
 }
 
 const renderTodo = (todos: Todo[]) => {
-  todosContainer.innerText="" //ye todo list ko bar bar aane se rok rha h 
+  todosContainer.innerText=""
   todos.forEach((item) => {
     generateTodoItem(item.title, item.isCompleted, item.id);
   })
